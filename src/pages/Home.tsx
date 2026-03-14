@@ -35,20 +35,20 @@ export default function Home() {
                 {/* 下拉菜单 (Hover 时显示) */}
                 <div className="absolute right-0 mt-2 w-48 bg-paper border border-border rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
                   <a
-                    href="https://github.com/你的用户名/仓库名/releases/latest"
+                    href="https://github.com/AsightCode/BioJ_website/releases/latest/download/BioJ_Setup.exe"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-3 hover:bg-surface text-sm text-ink border-b border-border transition-colors"
                   >
-                    🚀 GitHub 下载 (推荐)
+                    GitHub下载
                   </a>
                   <a
-                    href="https://pan.baidu.com/s/你的网盘链接"
+                    href="https://pan.baidu.com/s/5HRh8WBjawLHA3sOnGG49fA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-3 hover:bg-surface text-sm text-ink transition-colors"
                   >
-                    ☁️ 国内网盘下载
+                    网盘下载
                   </a>
                 </div>
               </div>
