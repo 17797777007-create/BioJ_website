@@ -27,15 +27,31 @@ export default function Home() {
                 立即开始
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-paper/80 text-ink border border-border rounded-lg font-medium hover:bg-surface transition-colors shadow-sm"
-              >
-                <Terminal className="w-4 h-4" />
-                下载 BioJ
-              </a>
+              <div className="relative group">
+                <button className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-paper/80 text-ink border border-border rounded-lg font-medium hover:bg-surface transition-colors shadow-sm w-full sm:w-auto">
+                  <Terminal className="w-4 h-4" />
+                  下载 BioJ
+                </button>
+                {/* 下拉菜单 (Hover 时显示) */}
+                <div className="absolute right-0 mt-2 w-48 bg-paper border border-border rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                  <a
+                    href="https://github.com/你的用户名/仓库名/releases/latest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-3 hover:bg-surface text-sm text-ink border-b border-border transition-colors"
+                  >
+                    🚀 GitHub 下载 (推荐)
+                  </a>
+                  <a
+                    href="https://pan.baidu.com/s/你的网盘链接"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-3 hover:bg-surface text-sm text-ink transition-colors"
+                  >
+                    ☁️ 国内网盘下载
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/80 border border-border text-sm font-medium text-ink">
               <span className="w-2 h-2 rounded-full bg-bright-yellow"></span>
