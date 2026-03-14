@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         className="relative min-h-[85vh] overflow-hidden bg-cover bg-left bg-no-repeat"
-        style={{ backgroundImage: "url('/BioJ_0.png')" }}
+        style={{ backgroundImage: "url('./BioJ_0.png')" }}
       >
         <div className="absolute inset-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pointer-events-none">
           {/* Buttons and Version Tag: Vertically centered on the right */}
@@ -82,7 +82,7 @@ export default function Home() {
       {/* Code Example Section */}
       <section 
         className="relative py-32 bg-cover bg-left bg-no-repeat"
-        style={{ backgroundImage: "url('/BioJ_1.png')" }}
+        style={{ backgroundImage: "url('./BioJ_1.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex flex-col lg:flex-row gap-16 items-center justify-end">
